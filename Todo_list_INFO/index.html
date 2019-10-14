@@ -1,0 +1,154 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>TODO LIST</title>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+      <script src="https://kit.fontawesome.com/5106db6593.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="mystyle.css">
+      <link rel="stylesheet" type="text/css" href="todo-css.css">
+     
+    </head>
+    <body>
+
+    <div class="page-wrapper chiller-theme toggled">  
+            <nav id="sidebar" class="sidebar-wrapper">
+                <div class="sidebar-content">
+                    <div id="toggle-sidebar">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="sidebar-brand">
+                        <a href="#"><span style="color: red;">TODO </span>LIST</a>
+                    </div>
+                    <div class="sidebar-header">
+                        <div class="user-pic">
+                            <img class="img-responsive img-rounded" src="images/man.png" alt="User picture">
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Prince
+                                <strong>Paraste</strong>
+                            </span>
+                            <span class="user-role">!nfostride Dev</span>
+                            <span class="user-status">
+                                <i class="fa fa-circle"></i>
+                                <span>Online</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- sidebar-header  -->
+                    <div class="sidebar-search">
+                        <div>
+                            <div class="input-group">
+                                <input type="text" class="form-control search-menu" placeholder="Search...">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sidebar-search  -->
+                    <div class="sidebar-menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-tachometer-alt"></i>
+                                    <span>Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="far fa-star"></i>
+                                    <span>Important</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-calendar"></i>
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-tasks"></i>
+                                    <span>Tasks</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-globe"></i>
+                                    <span>Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- sidebar-menu  -->
+                </div>
+            </nav>
+            <!-- sidebar-wrapper  -->
+            <main class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <!-- <h2>TODO LIST</h2> -->
+                            <p><strong><span style="color:red;">TODO</span> List: </strong>This is a small Todo list based on Bootstrap 4 Framework.</p>
+
+                            <div class="input-group">
+                                <input type="text"  id="input" class="form-control" placeholder="Enter Tasks">
+                                <div class="input-group-append">
+                                  <button id="button" class="btn btn-primary" type="button">
+                                    <span>ADD</span>
+                                  </button>
+                                </div>
+                              </div>
+
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="row">
+                        <div class="form-group col-md-5 border m-2 rounded ">
+                          <div class="col-md-12 mt-4 mb-4"><i class="fas fa-th-list text-danger"></i><span class="ml-2 text-primary">Tasks</span></div>
+                          
+                          <div class="content">
+                            <ul id="list">
+                                <!-- <li class="item">
+                                    <i class="fa fa-circle-thin co" job="complete" id="0"></i>
+                                    <p class="text">Drink Coffee</p>
+                                    <i class="fa fa-trash-o de" job="delete" id="0"></i> 
+                                </li> -->
+                            </ul>
+                        </div>
+                        <!-- <div class="add-to-do">
+                            <i class="fa fa-plus-circle"></i>
+                            <input type="text" placeholder="Add a to-do">
+                        </div> -->
+
+                        </div>
+                        <div class="form-group col-md-5 border m-2 rounded ">
+                          <div class="col-md-12 mt-4 mb-4"><i class="fas fa-clipboard-check text-success"></i><span class="ml-2 text-primary">Completed Tasks</span></div>
+                              <div id="teste" class="test col-md-12 border rounded m-2 p-3">asdfsadf
+                              <i data-id="ab1" class="fas fa-trash-alt float-right color-set"></i></div>
+                              <div class="test col-md-12 border rounded m-2 p-3">asdfsadf
+                              <i data-id="ab11" class="fas fa-trash-alt float-right color-set"></i></div>
+                              <div class="test col-md-12 border rounded m-2 p-3">asdfsadf
+                              <i data-id="ab12" class="fas fa-trash-alt float-right color-set"></i></div>
+                              <div class="test col-md-12 border rounded m-2 p-3">asdfsadf
+                              <i data-id="ab13" class="fas fa-trash-alt float-right color-set"></i></div>
+                        </div>
+                    </div>
+
+               
+                </div>
+        </main>
+        <!-- page-content" -->
+        </div>
+ <script type="text/javascript" src="jes.js"></script>
+      <script type="text/javascript" src="todo-js.js"></script>
+    </body>
+    </html>
